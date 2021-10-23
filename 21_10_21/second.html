@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ADIT Login</title>
+</head>
+
+<body>
+    <br /><br /><br />
+    <h1 align="center"><i>ADIT LOGIN PAGE</i></h1>
+
+    <form action="login.php" method="post">
+        <p align="center">
+            <fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <br />
+                <label>Username: </label>
+                <input type="text" name="Username" placeholder="Enter Username" required /> <br /><br />
+                <label>Password: </label>
+                <input type="password" name="Password" placeholder="Enter Password" required />
+                <br /><br />
+            </fieldset>
+            <br /><br />
+
+            <label>Select Branch:</label>
+            <select name="branch">
+                <option value="cp">Computer</option>
+                <option value="it">Information Technology</optiondefault>
+                <option value="ec">EC</option>
+                <option value="me">Mechanical</option>
+                <option value="ee">Electrical</option>
+            </select>
+            <br /><br />
+
+            <label>Select type of Examination:</label>
+            <br /><br />
+            <label>Mid</label><input type="radio" name="mid" value="mid"/>
+            <label>Re-Mid</label><input type="radio" name="mid" value="remid"/>
+            <label>Viva</label><input type="radio" name="mid" value="viva"/>
+            <label>Re-Viva</label><input type="radio" name="mid" value="reviva"/>
+            <br /><br />
+            <label>Upload Resume:</label>
+            <input type="file" name="upload" value="upload">
+            <br /><br />
+
+            <label>Describe yourself in 5 lines:</label><br/>
+            <textarea rows="10" cols="50"></textarea>            
+            <br /><br />
+            
+            <label>Enter Date of Birth:</label><br/>
+            <input type="date" name="bdate" />
+            <br /><br />
+            <label>Keep me signed up</label>
+            <input type="checkbox" value="signed" checked />
+            <br /><br />
+            <input type="submit" value="login" name="Login" />
+
+        </p>
+    </form>
+</body>
+</html>
