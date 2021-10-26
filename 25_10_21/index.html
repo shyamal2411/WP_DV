@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS CLASS</title>
+    <style>
+        .first {
+            font-size: 75px;
+            color: rgb(204, 17, 4);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .first:hover {
+            font-size: 100px;
+            background-color: rgb(16, 56, 94);
+            transition: 1s;
+        }
+        .second{
+            font-size:20px;
+            background-color:rgb(168, 188, 206);
+            color:rgb(21, 87, 124);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+        }
+        .second:active{
+            font-size:20px;
+            color:rgb(217, 227, 235);
+            background-color:rgb(36, 96, 131);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            box-shadow: 5px 5px 5px rgb(83, 81, 81);
+            /* never use transition in active property & when we're using clicking effect transition: 1s; */
+            /* transition is only used in hover  */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="first" align="center">Welcome to CSS</h1> -->
+    <button>Click Here!</button><br/><br/><br/>
+    <button class="second">Click Here!</button>
+</body>
+
+</html>
