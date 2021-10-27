@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27/-10 Images</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container -->
+    <style>
+      .container{
+        position: absolute;
+        width: 650px;
+        height: 372px;
+        top: 20%;
+        left: 30%;
+    }
+    
+    .tbl{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .box-1{
+        background-image:url("/wp_dv/27_10_21//assets//1.jpeg");
+        background-size: cover;
+        transition: 0.5s;
+    }
+    .box-2{
+        background-image:url("/wp_dv/27_10_21//assets//2.jpeg");
+        background-size: cover;
+        transition: 0.3s;
+    }
+    .box-3{
+        background-image:url("/wp_dv/27_10_21//assets//3.jpeg");
+        background-size: cover;
+        transition: 0.3s;
+    }
+    .box-4{
+        background-image:url("/wp_dv/27_10_21//assets//4.jpeg");
+        background-size: cover;
+        transition: 0.3s;
+        width: 140px;
+    }
+
+    .box-1:hover{
+        transform: scale(1.1);
+        filter: sepia(90%);
+        border: none;
+        box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7);
+    }
+    .box-2:hover{
+        transform: scale(1.1);
+        filter: sepia(90%);
+        border: none;
+        box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7);
+    }
+    .box-3:hover{
+        transform: scale(1.1);
+        filter: sepia(90%);
+        border: none;
+        box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7);
+    }
+    .box-4:hover{
+        transform: scale(1.1);
+        filter: sepia(90%);
+        border: none;
+        box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7),0px 20px 10px 0px rgba(0, 0, 0, 0.7);
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <table class="tbl" cellspacing="0">
+            <tr>
+                <td class=" box-1"></td>
+                <td class=" box-2"></td>
+                <td class=" box-3"></td>
+                <td class=" box-4"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
