@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LAB-3</title>
+    <style>
+        .Name{
+            width: 144px;
+            height: 20px;
+            font-size: 20px;
+            border:2px solid rgb(23, 164, 230);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .lName{
+            border:none;
+            /* border-top: 3px solid rgb(6, 22, 160); */
+            border-bottom: 3px solid rgb(6, 22, 160);
+        }
+        .divCl{
+            position: absolute;
+            top:24%;
+            left:44%;
+            width: 200px;
+            height:300px;
+            background-color: rgba(23, 164, 230, 0.5);
+            background-image: url("imgs/img4.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+
+    <div class="divCl">
+        <label>Name:</label><br/>
+        <input class="Name" type="text" placeholder="enter name" required />
+        <br/><br/><br/>
+    
+        <label>Last Name:</label><br/><br/>
+        <input class="lName" type="text" placeholder="enter name" required />
+    </div>
+    <!-- <textarea rows="10" cols="50"></textarea> -->
+</body>
+</html>
