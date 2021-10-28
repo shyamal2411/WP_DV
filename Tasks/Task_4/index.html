@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- TASK-2 SUBMIT -->
+
+<head>
+    <style>
+        .main {
+            background-image: url("img3.jpg");
+            background-size: cover;
+            filter: blur(100%);
+            /* opacity: -5;               */
+        }
+
+        .container {
+            position: absolute;
+            z-index: -5;
+            top: 150px;
+            left: 570px;
+            width: 360px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .text1 {
+            position: absolute;
+            left: 25px;
+            width: 300px;
+            height: 30px;
+            font-size: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-color: white;
+        }
+
+        .pass1 {
+            position: absolute;
+            left: 25px;
+            width: 300px;
+            height: 30px;
+            font-size: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-color: white;
+            color: white;
+        }
+
+        .label1 {
+            position: absolute;
+            top: 60px;
+            left: 65px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .creden {
+            position: absolute;
+            left: 25px;
+            color: white;
+        }
+
+        .remem {
+            position: absolute;
+            left: 128px;
+            color: white
+        }
+
+        .login1 {
+            position: absolute;
+            left: 30px;
+            background-color: rgb(52, 105, 175);
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: white;
+
+        }
+
+        .check1 {
+            position: absolute;
+            left: 105px;
+        }
+
+    </style>
+</head>
+
+<body class="main">
+    <form>
+        <div class="container">
+
+            <div>
+                <label class="label1">CONTACT FORM</label><br><br><br><br><br><br>
+
+                <label class="creden">Username :</label><br>
+                <input type="text" class="text1" placeholder="Enter Username" ><br><br><br>
+                <label class="creden">Password :</label><br>
+                <input type="password" class="pass1" placeholder="Enter Password"><br><br><br><br>
+                
+                <input type="submit" name="Login" value="Sign In" class="login1"><br><br><br><br>
+
+                <input type="checkbox" name="check" class="check1">
+                <label class="remem">Remember me</label>
+            </div>
+        </div>
+</body>
+
+</html>
