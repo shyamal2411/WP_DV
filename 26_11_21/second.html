@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26/11/21</title>
+</head>
+<style>
+    .para{
+        font-size:24px;
+        color:blue;
+        position: absolute;
+        top: 5%;
+        left: 0%;
+    }
+    .btn{
+            position: absolute;
+            left: 40%;
+            top:40%;
+            font-size:20px;
+            background-color:rgb(168, 188, 206);
+            color:rgb(21, 87, 124);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            
+        }
+        .btn-min{
+            position: absolute;
+            left: 50%;
+            top:40%;
+            font-size:20px;
+            background-color:rgb(168, 188, 206);
+            color:rgb(21, 87, 124);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            
+        }
+        
+        .btn:active{
+            font-size:20px;
+            color:rgb(217, 227, 235);
+            background-color:rgb(36, 96, 131);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            box-shadow: 5px 5px 5px rgb(83, 81, 81);
+        }
+        .btn-min:active{
+            font-size:20px;
+            color:rgb(217, 227, 235);
+            background-color:rgb(36, 96, 131);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            box-shadow: 5px 5px 5px rgb(83, 81, 81);
+        }
+
+</style>
+<body>
+    <p id="text"  class="para" align="center">Hello ADIT!</p><br/> 
+    <button onclick="min()" align="center" class="btn-min">--</button>
+    <button onclick="max()" align="center" class="btn">++</button>
+</body>
+<script>
+//    function to move left and right
+    function max(){
+        var x = document.getElementById("text");
+        x.style.left = "5%";
+    }
+    function min(){
+        var x = document.getElementById("text");
+        x.style.left = "5%";
+    }
+</script>
+</html>
+</script>
+</html>

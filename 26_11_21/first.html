@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26/11/21</title>
+</head>
+<style>
+    .para{
+        font-size:24px;
+        color:blue;
+        /* position: absolute;
+        top:50%;
+        left: 0%; */
+    }
+    .btn{
+            position: absolute;
+            left: 40%;
+            top:40%;
+            font-size:20px;
+            background-color:rgb(168, 188, 206);
+            color:rgb(21, 87, 124);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            
+        }
+        .btn-min{
+            position: absolute;
+            left: 50%;
+            top:40%;
+            font-size:20px;
+            background-color:rgb(168, 188, 206);
+            color:rgb(21, 87, 124);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            
+        }
+        
+        .btn:active{
+            font-size:20px;
+            color:rgb(217, 227, 235);
+            background-color:rgb(36, 96, 131);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            box-shadow: 5px 5px 5px rgb(83, 81, 81);
+        }
+        .btn-min:active{
+            font-size:20px;
+            color:rgb(217, 227, 235);
+            background-color:rgb(36, 96, 131);
+            border:none;
+            padding:10px 10px 10px 10px; 
+            border-radius: 1em;
+            box-shadow: 5px 5px 5px rgb(83, 81, 81);
+        }
+
+</style>
+<body>
+    <p id="text"  class="para" align="center">Hello ADIT!</p><br/> 
+    <button onclick="max()" align="center" class="btn">++</button>
+    <button onclick="min()" align="center" class="btn-min">--</button>
+</body>
+<script>
+    var size=24;
+
+    function max(){
+        // document.getElementById("text").style.color = "red";
+        // document.getElementById("text").style.fontSize = "50px";
+        if(size<=50){
+            size = size + 4;
+            document.getElementById("text").style.fontSize = size + "px";
+        }
+    }
+    function min(){
+        // document.getElementById("text").style.color = "red";
+        // document.getElementById("text").style.fontSize = "50px";
+        if(size>=24){
+            size = size - 1;
+            document.getElementById("text").style.fontSize = size + "px";
+        }
+}
+</script>
+</html>
