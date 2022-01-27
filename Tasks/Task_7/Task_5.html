@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Task</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Siblings:</h1>
+    <h2>Same Middle Names</h2>
+    <br /><br />
+    <script>
+        let fName = ["Pratham ", " Param ", "Manthan ", "Jaimin ", "Param "];
+        let mName = ["Sureshbhai ", "Arvindbhai ", "Amitbhai ", "Vipulbhai ", "Arvindbhai "];
+        let lName = ["Patel ", "Sachapara ", "Patel ", "Sachapara ", "Patel "];
+        let vis = [];
+
+        for (let i = 0; i < 5; i++)
+            vis[i] = 0;
+
+        for (let i = 0; i < 5; i++) {
+            if (vis[i] == 0) {
+                document.write("siblings middle name are: " + mName[i] + "<br>");
+                for (let j = i; j < 5; j++) {
+                    if (mName[i] === mName[j] && vis[j] == 0) {
+                        vis[j] = 1;
+                        document.write(fName[j] + " " + mName[j] + " " + lName[j] + "<br>");
+                    }
+                }
+                vis[i] = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>
