@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Report Card</title>
+</head>
+
+<body>
+    <!-- Design reference: https://www.students.gtu.ac.in/ -->
+    <h1 class="heading">GUJARAT TECHNOLOGICAL UNIVERSITY</h1>
+    <h2 class="heading2">STUDENT GRADE HISTORY</h2>
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Enter Enrolment Number" id="Search" />
+            <button type="submit" class="searchButton" onclick="getEr();">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <table id="tableContents">
+        <tr>
+            <td>NAME</td>
+            <td>ENROLLMENT-NO.</td>
+            <td>BRANCH</td>
+            <td>SUBJECT</td>
+            <td>GRADE</td>
+            <td>SEMESTER</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
