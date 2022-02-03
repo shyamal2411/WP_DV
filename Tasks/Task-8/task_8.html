@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-8</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        table{
+            table-layout: fixed;
+            width: 48%;
+            margin-top: -8%;
+        }
+        tr{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Marksheet</h2>
+    <h3>SEM-3 | 190010107055</h3>
+    <script> 
+
+        var grades = [{"subName":"AJP","code":"3012468","ESE":"BC", "PA":"BB", "TOTAL":"BC","ps":"AB", "P_PA":"AA", "pTotal":"AA","grade":"BC"},
+                          {"subName":"PAS","code":"3130045","ESE":"BB", "PA":"AA", "TOTAL":"BB","ps":"-", "P_PA":"-", "pTotal":"-","grade":"BB"},
+                          {"subName":"IC","code":"3130437","ESE":"PS", "PA":"-", "TOTAL":"PS","ps":"-", "P_PA":"-", "pTotal":"-","grade":"PS"},
+                          {"subName":"DE-1A","code":"3137908","ESE":"-", "PA":"-", "TOTAL":"-","ps":"AA", "P_PA":"AA", "pTotal":"AA","grade":"AA"},
+                          {"subName":"DS","code":"3130302","ESE":"BC", "PA":"AA", "TOTAL":"BB","ps":"AA", "P_PA":"AA", "pTotal":"AA","grade":"AB"},
+                          {"subName":"DBMS","code":"3137303","ESE":"BC", "PA":"AA", "TOTAL":"BB","ps":"AA", "P_PA":"AA", "pTotal":"AA","grade":"AB"},
+                          {"subName":"DF","code":"3012468","ESE":"BC", "PA":"AA", "TOTAL":"BC","ps":"AB", "P_PA":"AA", "pTotal":"AA","grade":"BB"}]
+                
+        var Manav = JSON.stringify(grades)        
+        var sg = JSON.parse(Manav)
+
+        var i=0;
+        document.write("<table border =1 cellspacing=0 align=center >")
+        document.write("<tr>")
+        document.write("<td rowspan=2>"+"Subject Name"+"</td>")
+        document.write("<td rowspan=2>"+"Subject Code"+"</td>")
+        document.write("<td colspan=3>"+"Theory Grade"+"</td>")
+        document.write("<td colspan=3>"+"Practical Grade"+"</td>")
+        document.write("<td rowspan=2>"+"Subject Grade"+"</td>")
+        document.write("</tr>")
+        document.write("<td>"+"ESE"+"</td>")
+        document.write("<td>"+"PA"+"</td>")
+        document.write("<td>"+"TOTAL"+"</td>")
+        document.write("<td>"+"ESE"+"</td>")
+        document.write("<td>"+"PA"+"</td>")
+        document.write("<td>"+"TOTAL"+"</td>")
+
+        for(i=0;i<sg.length;i++){
+            document.write("</br>")
+            document.write("<tr>")
+        	document.write("<td>"+sg[i].subName+"</td>")
+        	document.write("<td>"+sg[i].code+"</td>")
+            document.write("<td>"+sg[i].ESE+"</td>")
+        	document.write("<td>"+sg[i].PA+"</td>")
+        	document.write("<td>"+sg[i].TOTAL+"</td>")
+            document.write("<td>"+sg[i].ps+"</td>")
+        	document.write("<td>"+sg[i].P_PA+"</td>")
+        	document.write("<td>"+sg[i].pTotal+"</td>")
+        	document.write("<td>"+sg[i].grade+"</td>")
+	        document.write("</tr>")
+        }
+        document.write("</table>"+"<br><br>")
+    </script>
+
+<h2>Marksheet</h2>
+<h3>SEM-3 | 190010107070</h3>
+    <script> 
+
+        var grades = [{"subName":"DE-1B","code":"3140005","ESE":"-", "PA":"-", "TOTAL":"-","ps":"AA", "P_PA":"AB", "pTotal":"AA","grade":"AA"},
+                          {"subName":"OS","code":"3140702","ESE":"AB", "PA":"AA", "TOTAL":"AA","ps":"AA", "P_PA":"AA", "pTotal":"AA","grade":"AA"},
+                          {"subName":"OOP-I","code":"3140705","ESE":"AB", "PA":"AA", "TOTAL":"AB","ps":"AB", "P_PA":"AA", "pTotal":"AA","grade":"AB"},
+                          {"subName":"COA","code":"3140707","ESE":"BB", "PA":"AA", "TOTAL":"AB","ps":"AA", "P_PA":"AA", "pTotal":"AA","grade":"AB"},
+                          {"subName":"DM","code":"3140708","ESE":"AB", "PA":"AA", "TOTAL":"AA","ps":"-", "P_PA":"-", "pTotal":"-","grade":"AA"},
+                          {"subName":"PEM","code":"3140709","ESE":"AB", "PA":"AA", "TOTAL":"AA","ps":"-", "P_PA":"-", "pTotal":"-","grade":"AA"}]
+                
+        var Manav = JSON.stringify(grades)        
+        var sg = JSON.parse(Manav)
+
+        var i=0;
+        document.write("<br/>")
+        document.write("<table border =1 cellspacing=0 align=center >")
+        document.write("<tr>")
+        document.write("<td rowspan=2>"+"Subject Name"+"</td>")
+        document.write("<td rowspan=2>"+"Subject Code"+"</td>")
+        document.write("<td colspan=3>"+"Theory Grade"+"</td>")
+        document.write("<td colspan=3>"+"Practical Grade"+"</td>")
+        document.write("<td rowspan=2>"+"Subject Grade"+"</td>")
+        document.write("</tr>")
+        document.write("<td>"+"ESE"+"</td>")
+        document.write("<td>"+"PA"+"</td>")
+        document.write("<td>"+"TOTAL"+"</td>")
+        document.write("<td>"+"ESE"+"</td>")
+        document.write("<td>"+"PA"+"</td>")
+        document.write("<td>"+"TOTAL"+"</td>")
+
+        for(i=0;i<sg.length;i++){
+            document.write("</br>")
+            document.write("<tr>")
+        	document.write("<td>"+sg[i].subName+"</td>")
+        	document.write("<td>"+sg[i].code+"</td>")
+            document.write("<td>"+sg[i].ESE+"</td>")
+        	document.write("<td>"+sg[i].PA+"</td>")
+        	document.write("<td>"+sg[i].TOTAL+"</td>")
+            document.write("<td>"+sg[i].ps+"</td>")
+        	document.write("<td>"+sg[i].P_PA+"</td>")
+        	document.write("<td>"+sg[i].pTotal+"</td>")
+        	document.write("<td>"+sg[i].grade+"</td>")
+	        document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>
