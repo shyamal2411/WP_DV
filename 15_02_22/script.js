@@ -61,16 +61,22 @@ var log = JSON.parse(categ)
 
 var i = 0;
 
-// document.write("<table border = 1 cellspacing = 0 align = center>");
-// document.write("<tr>");
-// document.write("<td rowspan=2>" + "Smartphone" + "</td");
-// document.write("</tr>");
+document.write("<table border = 1 cellspacing = 0 align = center>");
+document.write("<tr>");
+document.write("<td rowspan=2>"+"Image"+"</td>")
+document.write("<td rowspan=2>"+"Brand"+"</td>")
+document.write("<td rowspan=2>"+"Model"+"</td>")
+document.write("<td rowspan=2>"+"OS"+"</td>")
+document.write("<td rowspan=2>"+"Price"+"</td>")
+document.write("</tr>");
 
+document.write()
+document.write("</table>")
 
 for(i=0;i<log.length;i++){
+    document.write("<img src="+log[i].imgLocation + "/>");
     document.write(log[i].Id);
     document.write(log[i].ItemId);
    document.write(log[i].ItemName);
    document.write(log[i].Price);
-
-}
+   }
