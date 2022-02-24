@@ -61,7 +61,7 @@ var log = JSON.parse(categ)
 
 var i = 0;
 
-document.write("<table border = 1 cellspacing = 0 align = center>");
+document.write("<table border = 4 cellspacing = 0 align = center>");
 document.write("<tr>");
 document.write("<td rowspan=2>"+"Image"+"</td>")
 document.write("<td rowspan=2>"+"Brand"+"</td>")
@@ -75,8 +75,9 @@ document.write("</table>")
 
 for(i=0;i<log.length;i++){
     document.write("<img src="+log[i].imgLocation + "/>");
-    document.write(log[i].Id);
-    document.write(log[i].ItemId);
-   document.write(log[i].ItemName);
-   document.write(log[i].Price);
+    document.write("<td>"+log[i].Id+"</td>");
+    document.write("<td>"+log[i].ItemId+"</td>");
+    document.write("<td>"+log[i].ItemName+"</td>");
+    document.write("<td>"+log[i].Price+"</td>");
    }
+   document.write("</table>"+"<br><br>")
