@@ -1,0 +1,50 @@
+.para{
+    font-family: 'Open Sans', sans-serif;
+    font-size:20px;
+    color:red;
+}
+
+.menu1{
+    font-family: 'Open Sans', sans-serif;
+    font-size:20px;
+    color:red;
+    text-decoration: none;
+    display: block;
+}
+
+.menu2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    color:blue;
+    text-decoration: none;
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .para{
+        color: rgb(20, 139, 26);
+        font-size:15px;
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .para{
+        color:rgb(173, 0, 159);
+        font-size:25px;
+    }    
+    
+.menu1{
+    font-family: 'Open Sans', sans-serif;
+    font-size:20px;
+    /* color:yellow; */
+    text-decoration: none;
+    display: none;
+}
+.menu2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    color:blue;
+    text-decoration: none;
+    display: block;
+}
+}
