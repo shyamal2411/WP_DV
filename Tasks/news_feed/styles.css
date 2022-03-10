@@ -1,0 +1,225 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: darkslategrey;
+}
+
+.a1 {
+    width: 18%;
+    float: left;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    border-right: 2px solid rgb(163, 163, 163);
+}
+
+.a11 {
+    color: rgb(199, 7, 7);
+    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.a12 {
+    font-size: x-large;
+    margin-top: -20px;
+    margin-left: 25px;
+}
+
+.a13 {
+    margin-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.a14 {
+    border-bottom: 1px solid rgb(139, 139, 139);
+    align-items: center;
+    width: 85%;
+    margin-left: 20px;
+}
+
+.a2 {
+    margin-left: 10px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(139, 139, 139);
+    color: grey;
+    width: 41%;
+    height: 450px;
+}
+
+.a3 {
+    float: left;
+    width: 18%;
+    margin-left: 10px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid rgb(163, 163, 163);
+
+}
+
+.a31 {
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+.a32 {
+    margin-left: 10px;
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a33 {
+    border-bottom: 1px solid rgb(139, 139, 139);
+    width: 90%;
+    margin-left: 10px;
+}
+
+
+.a4 {
+    float: left;
+    width: 20%;
+    margin-left: 10px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid rgb(163, 163, 163);
+}
+
+.a41 {
+    border-top: 1px solid rgb(139, 139, 139);
+    width: 90%;
+    margin-left: 10px;
+}
+
+
+
+.a43 {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 150px;
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.a44 {
+    margin-top: 33px;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    float: left;
+    height: 117px;
+}
+
+
+
+@media screen and (max-width:570px) {
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        color: darkslategrey;
+        width: 100%;
+    }
+
+    .a1 {
+        width: 100%;
+        float: left;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .a11 {
+        color: rgb(199, 7, 7);
+        margin-left: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+    }
+
+    .a12 {
+        font-size: x-large;
+        margin-top: -20px;
+        margin-left: 25px;
+    }
+
+    .a13 {
+        margin-right: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .a14 {
+        border-bottom: 1px solid rgb(139, 139, 139);
+        align-items: center;
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    .a2 {
+        margin-left: 10px;
+        float: left;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(139, 139, 139);
+        color: grey;
+        width: 100%;
+        height: 450px;
+    }
+
+    .a3 {
+        float: left;
+        width: 100%;
+        margin-left: 10px;
+        height: 350px;
+        background-color: rgb(255, 255, 255);
+        border-left: 2px solid rgb(163, 163, 163);
+
+    }
+
+    .a31 {
+        margin-left: 10px;
+        font-size: x-large;
+    }
+
+    .a32 {
+        margin-left: 10px;
+        color: grey;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .a33 {
+        border-bottom: 1px solid rgb(139, 139, 139);
+        width: 90%;
+        margin-left: 10px;
+    }
+
+
+    .a4 {
+        float: left;
+        width: 100%;
+        margin-left: 10px;
+        height: 530px;
+        background-color: rgb(255, 255, 255);
+        border-left: 2px solid rgb(163, 163, 163);
+    }
+
+    .a41 {
+        border-top: 1px solid rgb(139, 139, 139);
+        width: 90%;
+        margin-left: 10px;
+    }
+
+
+
+    .a43 {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        height: 150px;
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .a44 {
+        margin-top: 33px;
+        background-color: rgb(255, 255, 255);
+        width: 40%;
+        float: left;
+        height: 117px;
+    }
+}
