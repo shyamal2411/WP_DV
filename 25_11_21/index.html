@@ -5,14 +5,20 @@
     <title>25-11-21</title>
     <style>
         .second{
-            font-size:20px;
-            background-color:rgb(168, 188, 206);
-            color:rgb(21, 87, 124);
-            border:none;
-            padding:10px 10px 10px 10px; 
+            font-size: 20px;
+            background-color: rgb(168, 188, 206);
+            color: rgb(21, 87, 124);
+            border: none;
+            padding: 12px 14px 10px 10px;
             border-radius: 1em;
+            top: 50%;
+            right: 50%;
+            position: absolute;
         }
         .second:active{
+            /* top: 60%;
+            right: 50%;
+            position: absolute; */
             font-size:20px;
             color:rgb(217, 227, 235);
             background-color:rgb(36, 96, 131);
@@ -21,12 +27,17 @@
             border-radius: 1em;
             box-shadow: 5px 5px 5px rgb(83, 81, 81);
         }
+        .para{
+            position:absolute;
+            top: 60%;
+            right: 50%;
+        }
     </style>
 </head>
 
 <body>
     <button onclick="firstFunction()" align="center" class="second" >Click Here!</button>
-    <p id="clicked"></p>
+    <p id="clicked" class="para"></p>
    
 </body>
 <script>

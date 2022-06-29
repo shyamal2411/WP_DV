@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>playButton</title>
+<style>
+    #messageText {
+        font-size: 60px;
+        text-anchor: middle;
+    }
+</style>
+
+<body>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        // -----------------------
+
+        var width = 960,
+            height = 500;
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        var messageText = svg.append("text")
+            .attr("id", "messageText")
+            .attr("x", width / 2)
+            .attr("y", 200);
+
+        write("click the play button");
+        var fnList = [
+            function () {
+                write("again");
+            },
+            function () {
+                write("and again");
+            },
+            function () {
+                write("see?");
+            },
+            function () {
+                write("you cannot click any more");
+            }
+        ]
+        playButton(svg, fnList, width / 2 - 25, 300);
+
+        function write(text) {
+            messageText.attr("class", text).text(text)
+        }
+
+        function playButton(svg, fnList, x, y) {
+            var i = 0;
+
+            var button = svg.append("g")
+                .attr("transform", "translate(" + x + "," + y + ")");
+
+            button
+                .append("rect")
+                .attr("width", 50)
+                .attr("height", 50)
+                .attr("rx", 4)
+                .style("fill", "steelblue");
+
+            button
+                .append("path")
+                .attr("d", "M15 10 L15 40 L35 25 Z")
+                .style("fill", "white");
+
+            button
+                .append("title")
+                .text(String(fnList[0]));
+
+            button
+                .on("mousedown", function () {
+                    d3.select(this).select("rect")
+                        .style("fill", "white")
+                        .transition().style("fill", "steelblue");
+                    fnList[i]();
+                    i++;
+                    d3.select(this).select("title").text(String(fnList[i]));
+                    if (i == fnList.length) d3.select(this).remove();
+                });
+        }
+    </script>

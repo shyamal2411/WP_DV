@@ -1,0 +1,48 @@
+[
+{
+    "data" : [
+        {
+            "id": 1,
+            "que" : "What is the capital of India?",
+            "option_1":"First",
+            "option_2":"Second",
+            "option_3":"Third",
+            "option_4":"Fourth"            
+        },
+        {
+            "id" : 2,
+            "que": "Who is the Prime Minister of India?",
+            "option_1": "Narendra Modi",
+            "option_2": "Rahul Gandhi",
+            "option_3": "Sonia Gandhi",
+            "option_4": "Manmohan Singh"
+            
+        },
+        {
+            "id": 3,
+            "que": "Who is the current President of India?",
+            "option_1": "Ramnath Kovind",
+            "option_2": "Narendra Modi",
+            "option_3": "Rahul Gandhi",
+            "option_4": "Sonia Gandhi"
+            
+        },
+        {
+            "id": 4,
+            "que": "Who is the current President of India?",
+            "option_1": "Ramnath Kovind",
+            "option_2": "Narendra Modi",
+            "option_3": "Rahul Gandhi",
+            "option_4": "Sonia Gandhi"
+        },
+        {
+            "id": 5,
+            "que": "Who is the current President of India?",
+            "option_1": "Ramnath Kovind",
+            "option_2": "Narendra Modi",
+            "option_3": "Rahul Gandhi",
+            "option_4": "Sonia Gandhi"
+        }
+    ]
+}
+]

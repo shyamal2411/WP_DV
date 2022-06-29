@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>31/3/2022</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        direction: vertical;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <script src="./clock.js"></script>
+  <body>
+    <!-- Hours -->
+    <div class="swiper mySwiper1 hours" style="margin-left:-600px" id="hours"> 
+      <div class="swiper-wrapper" id="wrapper-hour">
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    <!-- Minutes-->
+    <div class="swiper mySwiper2 minutes" id="minutes">
+      <div class="swiper-wrapper" id="wrapper-minute">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Seconds -->
+    <div class="swiper mySwiper3 seconds" style="margin-left: 300px" id="seconds">
+      <div class="swiper-wrapper" id="wrapper-second">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper1 = new Swiper(".mySwiper1", {
+        effect: "cube",
+        grabCursor: false,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94
+        },
+        autoplay: {
+          delay: 36000,
+          disableOnInteraction: false
+        }
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        effect: "cube",
+        grabCursor: false,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94
+        },
+        autoplay: {
+          delay: 24000,
+          disableOnInteraction: false
+        }
+      });
+
+      var swiper3 = new Swiper(".mySwiper3", {
+        effect: "cube",
+        grabCursor: false,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94
+        },
+        autoplay: {
+          delay: 60000,
+          disableOnInteraction: false
+        }
+      });
+    </script>
+  </body>
+</html>
